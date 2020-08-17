@@ -30,23 +30,23 @@ inventory = []
 ## A dictionary linking a room to other rooms
 rooms = {
 
-            'Hall' : { 
-                  'south' : 'Kitchen',
+            'Monk Temple' : { 
+                  'south' : 'Training Room',
                   'east'  : 'Dining Room',
                   'item'  : 'manuscript'
                 },
 
-            'Kitchen' : {
-                  'north' : 'Hall',
+          'Training Room' : {
+                  'north' : 'Monk Temple',
                   'item'  : 'demon',
                 },
             'Dining Room' : {
-                  'west' : 'monk temple',
-                  'south': 'Garden',
+                  'west' : 'Monk Temple',
+                  'south': 'War Camp',
                   'item' : 'potion'
                },
-            'Garden' : {
-                  'north' : 'war camp',
+            'War Camp' : {
+                  'north' : 'Dining Room',
                   'south' : 'Forest'
                },
             'Forest' : {
@@ -57,7 +57,7 @@ rooms = {
 
 
 #start the player in the Hall
-currentRoom = 'Hall'
+currentRoom = 'Monk Temple'
 
 showInstructions()
 
